@@ -69,8 +69,8 @@ def write_to_csv(file_path: str, rows: int) -> None:
         file_path (str): The path where the CSV file will be saved.
         rows (int): The number of fake user records to generate.
     """
-    # Create a Faker instance with Romanian data.
-    fake = create_data("ro_RO")
+    # Create a Faker instance with Spanish data.
+    fake = create_data("es_MX")
     
     # Define the CSV headers.
     headers = [
@@ -140,7 +140,7 @@ if __name__ == "__main__":
     output_file = f"chapter_2/work_2/data_2/batch_{date.today()}.csv"
 
     # Define number of records: first run - 10_372; next runs random number.
-    if str(date.today()) == "2025-06-20":
+    if str(date.today()) == "2025-06-24":
         records = random.randint(100_372, 100_372)
         run_type = "first"
     else:

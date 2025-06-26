@@ -25,12 +25,12 @@ Analyze the DrivenData source by examining the data volume from the previous yea
 ### 3. **Data Generation**
 - I created the `batch_generator.py` script using the `Faker` and `Polars` libraries  
 - I analyzed and understood each function in the script  
-- I generated 100,372 records and stored them in `work_2/data_2/batch_2025-06-20.csv`
+- I generated 100,372 records and stored them in `work_2/data_2/batch_2025-06-24.csv`
 
 ### 4. **Data Transformation**
 - I created the server and the database  
 - Within the database, I created the table and its columns  
-- I imported the generated records from `work_2/data_2/batch_2025-06-20.csv`  
+- I imported the generated records from `work_2/data_2/batch_2025-06-24.csv`  
 - I ran a query to select and validate the raw data
 
 ### 5. **Bronze Layer**
@@ -51,9 +51,10 @@ Analyze the DrivenData source by examining the data volume from the previous yea
 ---
 
 ## 🧾 Evidence
-- `work_2/data_2/batch_2025-06-20.csv` and `work_2/data_2/batch_2025-06-21.csv`  
+- `work_2/data_2/batch_2025-06-24.csv` and `work_2/data_2/batch_2025-06-25.csv`  
 - `work_2/batch_generator.py`  
 - **Screenshots**:
-![Python script and data generated](./screenshots/image_1.png)
-![pgAdmin: Bronze, Silver and Golden slayer](./screenshots/image_2.png)
-![Python script and data generated](./screenshots/image_3.png)
+![Python script first run](./screenshots/evidence_1.png)
+![Python script next run](./screenshots/evidence_3.png)
+![Python script and data generated](./screenshots/evidence_2.png)
+![Last query](./screenshots/evidence_4.png)
